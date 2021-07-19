@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title>Belly Button Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -16,14 +16,16 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p> 
-          <b>Use the interactive charts below to explore the dataset</b>
-        </p>
-      </div>
+        <p> <b><h3> Use the interactive charts below to explore the dataset </h3></b> <br>
+        <h4> Improbable Beef collected samples of bacteria from volunteers to identify potential 
+                bacteria species (OTUs) that may aid in manufacturing synthetic beef. Select the Test Subject ID number 
+                to see demographic information about each subject, top 10 bacteria found, 
+                belly button washing frequency, and see an overall visualization of all the bacteria 
+                found in the subject's sample. </h4></div>     
     </div>
     <div class="row">
       <div class="col-md-2" >
-        <div class="well" style="background-color:rgb(163, 181, 184);">
+        <div class="well" style="background-color:rgb(240, 240, 240);">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
@@ -38,13 +40,13 @@
       <div class="col-md-5">
         <div id="bar"></div>
         <p>
-          <i>Bar chart displays the top 10 bacterial species (OTUs) for the selected test subject</i>
+          <i>Bar chart lists top 10 bacterial species for the selected test subject in descending order</i>
         </p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
         <p>
-          <i>Gauge chart that displays the weekly washing frequency for the selected test subject</i>
+          <i>Gauge chart displays weekly belly button washing frequency for the selected test subject</i>
         </p>
       </div>
     </div>
@@ -52,7 +54,7 @@
       <div class="col-md-12">
         <div id="bubble"></div>
         <p>
-          <i>Bubble chart that displays the bacterial species (OTUs) for the selected test subject. The marker size represents the size of the sample.</i>
+          <i>Bubble chart displays the number of bacteria cultures per sample for each of the bacterial species found for the selected test subject. The marker size is representative of the number of cultures for that bacterial species within the sample.</i>
         </p>
       </div>
     </div>
